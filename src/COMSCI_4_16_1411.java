@@ -14,7 +14,7 @@ public class COMSCI_4_16_1411 {
 		// A=65, Z=90
 		// We want to go from 65 and 65 + 25
 		// a will be 65
-		// b will be 25
+		// b will be 25 + 1
 		
 		// Old code:
 		// int number = (int) (startingValue + Math.random() *(endingValue));
@@ -25,8 +25,16 @@ public class COMSCI_4_16_1411 {
 		// To simplify:
 		System.out.println((char)(startingValue + Math.random()*(endingValue)));
 		
+		// We now have essentially one line of code to generate a random letter
 		
+		// Now we can try it with its own method:
 
+	}
+	public static char generateRandomCharacter(){
+		int startingValue = 65;
+		int endingValue = 90 - 65 + 1;
+		char letter = (char)(startingValue + Math.random()*(endingValue));
+		return letter;
 	}
 
 }
