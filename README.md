@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This document details the generation of a Java program that writes an 
-uppercase letter to the console. This code is managed inside github.com
-and uses the Math.random() method as well as a custom method call.
+For this assignment I will create a program to generate a random number from the Math.random() code. This program will take the randomly generated number and translate it to a corresponding uppercase letter. The code will be managed using Git source code management and this document is edited through github.com.
 
 ## Outline
 ``` Java
@@ -13,6 +11,8 @@ and uses the Math.random() method as well as a custom method call.
 ```
 
 ## References and Literature
+#### This section was copied in class from Dr. Evert's README.md
+```Java
 // Liang Java 10th edition, Pg 87 Listing 3.3
 // This is an example of how to make a random number
 // int number1 = (int) (Math.random() *10);
@@ -24,8 +24,37 @@ and uses the Math.random() method as well as a custom method call.
 // Liang Java 10th edition. pg 122, 4.2.5 The random method.
 // a + Math.random() * b
 //returns a random number between a & a+b but excludes a+b.
+```
 
-//
+## Code
+``` Java
+public class COMSCI_4_16_1411 {
+	public static void main(String[] args) {
+		
+		
+		// A=65, Z=90
+		// To cover the possible outputs, we need a range from 65 to 25.
+		// a will be 65
+		// b will be 25
+		// Because the code excludes the upper limit of a+b, we must add one to raise the upper limit.
+		int number = (int) (65 + Math.random() *(25+1));
+		System.out.println (number);
+		char letter =(char)number;
+		System.out.println (letter);
+
+	}
+
+}
+```
+## Console Output
+#### Run 1:
+S
+#### Run 2:
+W
+#### Run 3:
+I
+
+## Git commands used in command prompt
 C:\Users\LAB>dir
  Volume in drive C is OS
  Volume Serial Number is BEA5-2D8E
@@ -103,3 +132,6 @@ To https://github.com/dakotadavis/COMSCI_4_16_1411.git
 Branch master set up to track remote branch master from origin.
 
 T:\CSEclipseWorkspace\COMSCI_4_16_1411>
+
+# Conclusion
+For this assignment I learned that there are more, conceivably infinite possibilities for the Math.Random () code. I see many applications for this in my own daily and professional work, and my mind was reeling with the possibilities this code presents. Also, the formatting presented in the github.com README.md editor is a more convenient and professional tool to manage a report.
